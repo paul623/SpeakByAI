@@ -27,7 +27,7 @@
         <EditText
             android:id="@+id/et_tts_input"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="300dp"
             android:hint="请输入一段话并继续"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
@@ -53,14 +53,29 @@
                     app:textSize="20sp" />
             </ScrollView>
 
-            <Button
-                android:id="@+id/btn_tts_speak"
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
                 android:layout_weight="3"
-                android:text="点我发音"
-                android:textSize="20sp" />
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_tts_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="清空"
+                    android:textSize="20sp" />
+                <Button
+                    android:id="@+id/btn_tts_speak"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="点我发音"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
 
         </LinearLayout>
     </LinearLayout>

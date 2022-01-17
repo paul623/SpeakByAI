@@ -7,14 +7,14 @@
         android:title="删除"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/tts_item_history"
-        android:icon="@drawable/icon_history"
-        android:title="历史"
-        app:showAsAction="ifRoom" />
-    <item
         android:id="@+id/tts_item_about"
         android:icon="@drawable/icon_about"
         android:title="关于"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/tts_item_history"
+        android:icon="@drawable/icon_history"
+        android:title="历史"
         app:showAsAction="ifRoom" />
 
 </menu>

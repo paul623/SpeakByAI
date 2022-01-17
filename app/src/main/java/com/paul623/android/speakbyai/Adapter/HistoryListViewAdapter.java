@@ -28,13 +28,13 @@ public class HistoryListViewAdapter extends BaseAdapter {
     public HistoryListViewAdapter(Context context,DataSetChangedListener dataSetChangedListener){
         this.context=context;
         this.dataSetChangedListener=dataSetChangedListener;
-        playListModels=LitePal.findAll(PlayListModel.class);
+        playListModels=LitePal.order("dateString desc").find(PlayListModel.class);
         if(playListModels==null){
             playListModels=new ArrayList<>();
         }
     }
     public void refresh(){
-        playListModels= LitePal.findAll(PlayListModel.class);
+        playListModels= LitePal.order("dateString desc").find(PlayListModel.class);;
         notifyDataSetChanged();
     }
     @Override

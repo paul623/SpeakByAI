@@ -30,13 +30,15 @@ public class TTSActivity extends BaseActivity {
     StackLabel stackLabel;
     @BindView(R.id.btn_tts_speak)
     Button btn_speak;
+    @BindView(R.id.btn_tts_clear)
+    Button btn_clear;
     @BindView(R.id.et_tts_input)
     EditText et_input;
     @BindView(R.id.tb_tts_head)
     Toolbar toolbar;
     KqwSpeechSynthesizer kqwSpeechSynthesizer;
     String content="";
-    String []labels={"xxx","快来吃饭了","我还有事，先走了","别调皮了,快点睡觉","我去学校了","小区东门"};
+    String []labels={"xxx","快来吃饭了","今天要开会","我在食堂吃了","我还有事，先走了","别调皮了,快点睡觉","我去学校了","小区东门"};
 
     @Override
     public void initViews() {
@@ -89,6 +91,13 @@ public class TTSActivity extends BaseActivity {
                         break;
                 }
                 return false;
+            }
+        });
+        btn_clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et_input.getText().clear();
+                content="";
             }
         });
         stackLabel.setOnLabelClickListener(new OnLabelClickListener() {

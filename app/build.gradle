@@ -9,8 +9,8 @@ android {
         applicationId "com.paul623.android.speakbyai"
         minSdk 23
         targetSdk 31
-        versionCode 4
-        versionName "1.0.3"
+        versionCode 5
+        versionName "1.0.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
