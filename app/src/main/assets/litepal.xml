@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="SpeakByAIDataBase" />
+    
+    <version value="1" />
+    <list>
+        <mapping class="com.paul623.android.speakbyai.Model.PlayListModel"/>
+    </list>
+</litepal>

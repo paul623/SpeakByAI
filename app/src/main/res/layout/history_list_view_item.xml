@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_history_list_view_content"
+            android:text="你在干嘛呢？"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_history_list_view_time"
+            android:layout_marginTop="5dp"
+            android:text="2022年1年17日 14：27：20"
+            android:textColor="@color/DarkGray"
+            android:textSize="15sp"
+            android:gravity="start|center_vertical"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_history_list_view_play"
+            android:src="@drawable/icon_play"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="播放" />
+        <ImageView
+            android:id="@+id/img_history_list_view_delete"
+            android:src="@drawable/icon_delete_x"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="删除"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".HistoryListViewActivity">
+    <com.allen.library.SuperTextView
+        app:sUseRipple="false"
+        android:id="@+id/stv_history_toolbar"
+        android:padding="10dp"
+        app:sLeftIconMarginLeft="0dp"
+        app:sLeftIconHeight="30dp"
+        app:sLeftIconWidth="30dp"
+        app:sCenterTextSize="20sp"
+        app:sLeftIconRes="@drawable/icon_back"
+        app:sCenterTextString="历史记录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/img_history_bg"
+        android:layout_gravity="center"
+        android:src="@drawable/bg_null"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <ListView
+        android:padding="10dp"
+        android:id="@+id/lv_history_list"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
